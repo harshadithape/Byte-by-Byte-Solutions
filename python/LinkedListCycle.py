@@ -52,47 +52,47 @@ class TestCycle(unittest.TestCase):
 
     def test_hasCycle(self):
         self.assertEqual(hasCycle(None), False)
-        print "Marking visited: Null input"
+        print ("Marking visited: Null input")
         n = Node()
         self.assertEqual(hasCycle(n), False)
-        print "Marking visited: Single node"
+        print ("Marking visited: Single node")
         n.next = n
         self.assertEqual(hasCycle(n), True)
-        print "Marking visited: Single node cycle"
+        print ("Marking visited: Single node cycle")
         n.next = Node()
         self.assertEqual(hasCycle(n), False)
-        print "Marking visited: Multinode list"
+        print ("Marking visited: Multinode list")
         n.next.next = n
         self.assertEqual(hasCycle(n), True)
-        print "Marking visited: Even length cycle"
+        print ("Marking visited: Even length cycle")
         n.next.next = Node()
         n.next.next.next = Node()
         n.next.next.next.next = n.next
         self.assertEqual(hasCycle(n), True)
-        print "Marking visited: Odd length cycle"
+        print ("Marking visited: Odd length cycle")
 
     def test_hasCycleFlyod(self):
         self.assertEqual(hasCycleFloyd(None), False)
-        print "\nMarking visited: Null input"
+        print ("\nMarking visited: Null input")
         n = Node()
         self.assertEqual(hasCycleFloyd(n), False)
-        print "Marking visited: Single node"
+        print ("Marking visited: Single node")
         n.next = n
         self.assertEqual(hasCycleFloyd(n), True)
-        print "Marking visited: Single node cycle"
+        print ("Marking visited: Single node cycle")
         n.next = Node()
         self.assertEqual(hasCycleFloyd(n), False)
-        print "Marking visited: Multinode list"
+        print ("Marking visited: Multinode list")
         n.next.next = n
         self.assertEqual(hasCycleFloyd(n), True)
-        print "Marking visited: Even length cycle"
+        print ("Marking visited: Even length cycle")
         n.next.next = Node()
         n.next.next.next = Node()
         n.next.next.next.next = n.next
         self.assertEqual(hasCycleFloyd(n), True)
-        print "Marking visited: Odd length cycle"
+        print ("Marking visited: Odd length cycle")
 
-        print "Passed all test cases"
+        print ("Passed all test cases")
 
 
 if __name__ == '__main__':

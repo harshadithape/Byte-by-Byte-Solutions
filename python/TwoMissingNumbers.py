@@ -63,22 +63,22 @@ class TestMissingNumbers(unittest.TestCase):
     def test_oneMissing(self):
         # oneMissing tests
         self.assertEqual(oneMissing([1, 2, 4, 5]), 3)
-        print "oneMissing: Normal case"
+        print ("oneMissing: Normal case")
         self.assertEqual(oneMissing([3, 2, 5, 4]), 1)
-        print "oneMissing: Missing first element"
+        print ("oneMissing: Missing first element")
         self.assertEqual(oneMissing([4, 3, 2, 1]), 5)
-        print "oneMissing: Missing last element"
-        print "Passed all oneMissing test cases"
+        print ("oneMissing: Missing last element")
+        print ("Passed all oneMissing test cases")
 
     def test_twoMissing(self):
         # twomissing tests
         self.assertEqual(twoMissing([1, 3, 5]), (2, 4))
-        print "\ntwoMissing: Normal case"
+        print ("\ntwoMissing: Normal case")
         self.assertEqual(twoMissing([2, 4, 5]), (1, 3))
-        print "twoMissing: Missing first element"
+        print ("twoMissing: Missing first element")
         self.assertEqual(twoMissing([3, 1, 2]), (4, 5))
-        print "twoMissing: Missing last two elements"
-        print "Passed all twoMissing test cases"
+        print ("twoMissing: Missing last two elements")
+        print ("Passed all twoMissing test cases")
 
 
 if __name__ == '__main__':
